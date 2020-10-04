@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is website with my projects and information about me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loveyousomuch554/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "loveyousomuch554@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loveyousomuch554/portfolio/issues"
+  },
+  "homepage": "https://github.com/loveyousomuch554/portfolio#readme"
+}
