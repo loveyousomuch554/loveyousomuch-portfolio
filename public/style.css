@@ -242,3 +242,44 @@
   font-size: 25px;
   color: rgba(0,0,0,1);
 }
+
+#what_i_worked_on {
+  left: 37px;
+  top: 2004px;
+  position: absolute;
+  overflow: visible;
+  width: 483px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  color: rgba(0,0,0,1);
+}
+
+#come_later {
+  left: 37px;
+  top: 2093px;
+  position: absolute;
+  overflow: visible;
+  width: 736px;
+  white-space: nowrap;
+  line-height: 50px;
+  margin-top: -12.5px;
+  text-align: left;
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgba(0,0,0,1);
+}
+
+#projects {
+  position: absolute;
+  width: 1076.219px;
+  height: 708.26px;
+  left: 171.754px;
+  top: 2073px;
+  overflow: visible;
+}
