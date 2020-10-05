@@ -283,3 +283,109 @@
   top: 2073px;
   overflow: visible;
 }
+
+#info_links {
+  left: 37px;
+  top: 2827px;
+  position: absolute;
+  overflow: visible;
+  width: 847px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  color: rgba(0,0,0,1);
+}
+
+#about_links {
+  left: 37px;
+  top: 2929px;
+  position: absolute;
+  overflow: visible;
+  width: 781px;
+  white-space: nowrap;
+  line-height: 50px;
+  margin-top: -12.5px;
+  text-align: left;
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 25px;
+  color: rgba(0,0,0,1);
+}
+
+#email {
+  left: 37px;
+  top: 3041px;
+  position: absolute;
+  overflow: visible;
+  width: 438px;
+  white-space: nowrap;
+  line-height: 50px;
+  margin-top: -10px;
+  text-align: left;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(0,0,0,1);
+  text-decoration: underline;
+}
+
+#social_telegram {
+  overflow: visible;
+  position: absolute;
+  width: 72px;
+  height: 60px;
+  left: 53px;
+  top: 3124px;
+  transform: matrix(1,0,0,1,0,0);
+}
+
+#social_twitter {
+  overflow: visible;
+  position: absolute;
+  width: 72px;
+  height: 58.5px;
+  left: 198px;
+  top: 3128px;
+  transform: matrix(1,0,0,1,0,0);
+}
+
+#social_git {
+  overflow: visible;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 342.557px;
+  top: 3118px;
+  transform: matrix(1,0,0,1,0,0);
+}
+
+#social_svg {
+  position: absolute;
+  width: 1203px;
+  height: 774.711px;
+  left: 158px;
+  top: 3082px;
+  overflow: visible;
+}
+
+#bottom_logo {
+  left: 37px;
+  top: 3887px;
+  position: absolute;
+  overflow: visible;
+  width: 198px;
+  white-space: nowrap;
+  line-height: 33px;
+  margin-top: -4px;
+  text-align: right;
+  font-family: ONE DAY;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgba(0,0,0,1);
+}
