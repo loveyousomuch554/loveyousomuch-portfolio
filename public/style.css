@@ -1,0 +1,32 @@
+#Im_Nikita {
+  mix-blend-mode: darken;
+  left: 28px;
+  top: 184px;
+  position: absolute;
+  overflow: visible;
+  width: 361px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgba(0,0,0,1);
+}
+
+#Aspiring__software_engineer {
+  left: 27px;
+  top: 273px;
+  position: absolute;
+  overflow: visible;
+  width: 492px;
+  white-space: nowrap;
+  line-height: 85px;
+  margin-top: -12.5px;
+  text-align: left;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgba(0,0,0,1);
+}
