@@ -1,7 +1,25 @@
+#logo {
+  left: 30px;
+  top: 50px;
+  position: absolute;
+  overflow: visible;
+  width: 198px;
+  white-space: nowrap;
+  line-height: 33px;
+  margin-top: -4px;
+  text-align: right;
+  font-family: ONE DAY;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: rgba(0,0,0,1);
+}
+
+
 #Im_Nikita {
   mix-blend-mode: darken;
-  left: 28px;
-  top: 104px;
+  left: 100px;
+  top: 124px;
   position: absolute;
   overflow: visible;
   width: 361px;
@@ -15,8 +33,8 @@
 }
 
 #Aspiring__software_engineer {
-  left: 27px;
-  top: 203px;
+  left: 100px;
+  top: 223px;
   position: absolute;
   overflow: visible;
   width: 492px;
@@ -33,7 +51,7 @@
 
 #main_page {
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: -100px;
   height: 996px;
   width: 828px;
@@ -44,8 +62,8 @@
   position: absolute;
   width: 48px;
   height: 39px;
-  left: 62.949px;
-  top: 443px;
+  left: 125.949px;
+  top: 463px;
 }
 
 #main_inst {
@@ -53,8 +71,8 @@
   position: absolute;
   width: 48px;
   height: 48px;
-  left: 154.82px;
-  top: 439px;
+  left: 217.82px;
+  top: 459px;
 }
 
 #main_git {
@@ -62,8 +80,8 @@
   position: absolute;
   width: 48px;
   height: 48px;
-  left: 246.692px;
-  top: 439px;
+  left: 309.962px;
+  top: 459px;
 }
 
 #about_me {
@@ -102,10 +120,10 @@
 
 #about_my_path_svg {
   position: absolute;
-	width: 598px;
-	height: 437px;
-	left: 736px;
-	top: 948px;
+	width: 678px;
+	height: 517px;
+	left: 700px;
+	top: 900px;
 	overflow: visible;
 }
 
@@ -374,7 +392,7 @@
 }
 
 #bottom_logo {
-  left: 37px;
+  left: 30px;
   top: 3887px;
   position: absolute;
   overflow: visible;
