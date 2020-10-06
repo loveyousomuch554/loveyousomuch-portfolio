@@ -1,5 +1,5 @@
 #logo {
-  left: 30px;
+  left: 90px;
   top: 50px;
   position: absolute;
   overflow: visible;
@@ -18,7 +18,7 @@
 
 #Im_Nikita {
   mix-blend-mode: darken;
-  left: 100px;
+  left: 1.5em;
   top: 124px;
   position: absolute;
   overflow: visible;
@@ -33,7 +33,7 @@
 }
 
 #Aspiring__software_engineer {
-  left: 100px;
+  left: 1.5em;
   top: 223px;
   position: absolute;
   overflow: visible;
@@ -51,10 +51,10 @@
 
 #main_page {
   position: absolute;
-  right: 30px;
+  right: 90px;
   top: -100px;
-  height: 996px;
-  width: 828px;
+  height: 906px;
+  width: 738px;
 }
 
 #main_tw {
@@ -85,11 +85,11 @@
 }
 
 #about_me {
-  left: 37px;
-  top: 795px;
-  position: absolute;
+  top: 700px;
+  margin: auto;
+  position: relative;
   overflow: visible;
-  width: 1248px;
+  width: 88%;
   white-space: nowrap;
   line-height: 34px;
   margin-top: -3.5px;
@@ -97,13 +97,13 @@
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: lighter;
-  font-size: 27px;
+  font-size: 25px;
   color: rgba(0,0,0,1);
 }
 
 #about_my_path {
-  left: 37px;
-  top: 953px;
+  left: 4.5em;
+  top: 868px;
   position: absolute;
   overflow: visible;
   width: 616px;
@@ -114,7 +114,7 @@
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 20px;
   color: rgba(0,0,0,1);
 }
 
@@ -122,14 +122,14 @@
   position: absolute;
 	width: 678px;
 	height: 517px;
-	left: 700px;
-	top: 900px;
+  right: 90px;
+	top: 805px;
 	overflow: visible;
 }
 
 #skills {
-  left: 37px;
-  top: 1400px;
+  left: 1.5em;
+  top: 1300px;
   position: absolute;
   overflow: visible;
   width: 227px;
@@ -143,8 +143,8 @@
 }
 
 #about_skills {
-  left: 37px;
-  top: 1500px;
+  left: 3.5em;
+  top: 1400px;
   position: absolute;
   overflow: visible;
   width: 1126px;
@@ -160,8 +160,8 @@
 }
 
 #frontend {
-  left: 37px;
-  top: 1600px; /* 1745px */
+  left: 3.4em;
+  top: 1500px;
   position: absolute;
   overflow: visible;
   width: 121px;
@@ -177,8 +177,8 @@
 }
 
 #front_skills {
-  left: 190px;
-  top: 1600px;
+  left: 10em;
+  top: 1500px;
   position: absolute;
   overflow: visible;
   width: 466px;
@@ -194,8 +194,8 @@
 }
 
 #backend {
-  left: 37px;
-  top: 1650px;
+  left: 3.4em;
+  top: 1550px;
   position: absolute;
   overflow: visible;
   width: 121px;
@@ -211,8 +211,8 @@
 }
 
 #back_skills {
-  left: 190px;
-  top: 1656px;
+  left: 10em;
+  top: 1556px;
   position: absolute;
   overflow: visible;
   width: 496px;
@@ -228,8 +228,8 @@
 }
 
 #tools {
-  left: 37px;
-  top: 1750px;
+  left: 3.4em;
+  top: 1650px;
   position: absolute;
   overflow: visible;
   width: 91px;
@@ -245,8 +245,8 @@
 }
 
 #tools_info {
-  left: 190px;
-  top: 1750px;
+  left: 10em;
+  top: 1650px;
   position: absolute;
   overflow: visible;
   width: 151px;
@@ -262,8 +262,8 @@
 }
 
 #what_i_worked_on {
-  left: 37px;
-  top: 2004px;
+  left: 1.5em;
+  top: 1725px;
   position: absolute;
   overflow: visible;
   width: 483px;
@@ -277,8 +277,8 @@
 }
 
 #come_later {
-  left: 37px;
-  top: 2093px;
+  left: 3.4em;
+  top: 1870px;
   position: absolute;
   overflow: visible;
   width: 736px;
@@ -294,17 +294,17 @@
 }
 
 #projects {
+  right: 90px;
   position: absolute;
-  width: 1076.219px;
-  height: 708.26px;
-  left: 171.754px;
-  top: 2073px;
+  width: 1000.219px;
+  height: 632.26px;
+  top: 1800px;
   overflow: visible;
 }
 
 #info_links {
-  left: 37px;
-  top: 2827px;
+  left: 1.5em;
+  top: 2450px;
   position: absolute;
   overflow: visible;
   width: 847px;
@@ -318,8 +318,8 @@
 }
 
 #about_links {
-  left: 37px;
-  top: 2929px;
+  left: 3.5em;
+  top: 2550px;
   position: absolute;
   overflow: visible;
   width: 781px;
@@ -335,8 +335,8 @@
 }
 
 #email {
-  left: 37px;
-  top: 3041px;
+  left: 2.9em;
+  top: 2650px;
   position: absolute;
   overflow: visible;
   width: 438px;
@@ -357,8 +357,8 @@
   position: absolute;
   width: 72px;
   height: 60px;
-  left: 53px;
-  top: 3124px;
+  left: 90px;
+  top: 2724px;
   transform: matrix(1,0,0,1,0,0);
 }
 
@@ -367,8 +367,8 @@
   position: absolute;
   width: 72px;
   height: 58.5px;
-  left: 198px;
-  top: 3128px;
+  left: 235px;
+  top: 2728px;
   transform: matrix(1,0,0,1,0,0);
 }
 
@@ -377,23 +377,23 @@
   position: absolute;
   width: 72px;
   height: 72px;
-  left: 342.557px;
-  top: 3118px;
+  left: 379.557px;
+  top: 2718px;
   transform: matrix(1,0,0,1,0,0);
 }
 
 #social_svg {
   position: absolute;
-  width: 1203px;
-  height: 774.711px;
-  left: 158px;
-  top: 3082px;
+  width: 1003px;
+  height: 574.711px;
+  left: 350px;
+  top: 2582px;
   overflow: visible;
 }
 
 #bottom_logo {
-  left: 30px;
-  top: 3887px;
+  left: 90px;
+  top: 3187px;
   position: absolute;
   overflow: visible;
   width: 198px;
