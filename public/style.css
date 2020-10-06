@@ -261,6 +261,15 @@
   color: rgba(0,0,0,1);
 }
 
+#window_about_skills {
+  right: 120px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 1400px;
+  overflow: visible;
+}
+
 #what_i_worked_on {
   left: 1.5em;
   top: 1725px;
@@ -335,7 +344,7 @@
 }
 
 #email {
-  left: 2.9em;
+  left: 4.3em;
   top: 2650px;
   position: absolute;
   overflow: visible;
@@ -347,7 +356,7 @@
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
   color: rgba(0,0,0,1);
   text-decoration: underline;
 }
@@ -355,39 +364,48 @@
 #social_telegram {
   overflow: visible;
   position: absolute;
-  width: 72px;
-  height: 60px;
-  left: 90px;
-  top: 2724px;
+  width: 32px;
+  height: 30px;
+  left: 120px;
+  top: 2700px;
   transform: matrix(1,0,0,1,0,0);
 }
 
 #social_twitter {
   overflow: visible;
   position: absolute;
-  width: 72px;
-  height: 58.5px;
-  left: 235px;
-  top: 2728px;
+  width: 32px;
+  height: 30px;
+  left: 185px;
+  top: 2700px;
   transform: matrix(1,0,0,1,0,0);
 }
 
 #social_git {
   overflow: visible;
   position: absolute;
-  width: 72px;
-  height: 72px;
-  left: 379.557px;
-  top: 2718px;
+  width: 42px;
+  height: 32px;
+  left: 244px;
+  top: 2700px;
   transform: matrix(1,0,0,1,0,0);
 }
 
 #social_svg {
   position: absolute;
-  width: 1003px;
-  height: 574.711px;
-  left: 350px;
+  width: 926px;
+  height: 500.711px;
+  right: 30px;
   top: 2582px;
+  overflow: visible;
+}
+
+#window_about_links {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 90px;
+  top: 2782px;
   overflow: visible;
 }
 
