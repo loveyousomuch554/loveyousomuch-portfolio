@@ -1,3 +1,11 @@
+body {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0ms;
+}
+
 #logo {
   left: 90px;
   top: 50px;
@@ -19,7 +27,7 @@
 #Im_Nikita {
   mix-blend-mode: darken;
   left: 1.5em;
-  top: 124px;
+  top: 134px;
   position: absolute;
   overflow: visible;
   width: 361px;
@@ -30,11 +38,14 @@
   font-weight: bold;
   font-size: 60px;
   color: rgba(0,0,0,1);
+  transition: top 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #Aspiring__software_engineer {
   left: 1.5em;
-  top: 223px;
+  top: 233px;
   position: absolute;
   overflow: visible;
   width: 492px;
@@ -47,6 +58,9 @@
   font-weight: bold;
   font-size: 60px;
   color: rgba(0,0,0,1);
+  transition: top 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #engineer {
@@ -56,9 +70,12 @@
 #main_page {
   position: absolute;
   right: 90px;
-  top: -100px;
+  top: -90px;
   height: 906px;
   width: 738px;
+  transition: top 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 200ms;
 }
 
 #main_tw {
@@ -67,7 +84,10 @@
   width: 48px;
   height: 39px;
   left: 125.949px;
-  top: 463px;
+  top: 473px;
+  transition: top 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 225ms;
 }
 
 #main_inst {
@@ -76,7 +96,10 @@
   width: 48px;
   height: 48px;
   left: 217.82px;
-  top: 459px;
+  top: 469px;
+  transition: top 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 225ms;
 }
 
 #main_git {
@@ -85,11 +108,14 @@
   width: 48px;
   height: 48px;
   left: 309.962px;
-  top: 459px;
+  top: 469px;
+  transition: top 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 225ms;
 }
 
 #about_me {
-  top: 700px;
+  top: 710px;
   margin: auto;
   position: relative;
   overflow: visible;
@@ -103,6 +129,9 @@
   font-weight: lighter;
   font-size: 25px;
   color: rgba(0,0,0,1);
+  transition: top 0.7s;
+  transition-timing-function: ease;
+  transition-delay: 300ms;
 }
 
 #about_my_path {
@@ -127,13 +156,17 @@
 	width: 678px;
 	height: 517px;
   right: 90px;
-	top: 805px;
-	overflow: visible;
+	top: 810px;
+  overflow: visible;
+  color: rgba(0,0,0,1);
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #skills {
   left: 1.5em;
-  top: 1300px;
+  top: 1310px;
   position: absolute;
   overflow: visible;
   width: 227px;
@@ -143,7 +176,10 @@
   font-style: normal;
   font-weight: normal;
 	font-size: 60px;
-	color: rgba(0,0,0,1);
+  color: rgba(0,0,0,1);
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #about_skills {
@@ -270,13 +306,16 @@
   position: absolute;
   width: 350px;
   height: 350px;
-  top: 1400px;
+  top: 1405px;
   overflow: visible;
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #what_i_worked_on {
   left: 1.5em;
-  top: 1725px;
+  top: 1735px;
   position: absolute;
   overflow: visible;
   width: 483px;
@@ -287,6 +326,9 @@
   font-weight: normal;
   font-size: 60px;
   color: rgba(0,0,0,1);
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #come_later {
@@ -311,13 +353,16 @@
   position: absolute;
   width: 1000.219px;
   height: 632.26px;
-  top: 1800px;
+  top: 1805px;
   overflow: visible;
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #info_links {
   left: 1.5em;
-  top: 2450px;
+  top: 2460px;
   position: absolute;
   overflow: visible;
   width: 847px;
@@ -328,6 +373,9 @@
   font-weight: normal;
   font-size: 60px;
   color: rgba(0,0,0,1);
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #about_links {
@@ -400,8 +448,11 @@
   width: 926px;
   height: 500.711px;
   right: 30px;
-  top: 2582px;
+  top: 2587px;
   overflow: visible;
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #window_about_links {
@@ -409,8 +460,11 @@
   width: 350px;
   height: 350px;
   left: 90px;
-  top: 2782px;
+  top: 2787px;
   overflow: visible;
+  transition: top 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 150ms;
 }
 
 #bottom_logo {
