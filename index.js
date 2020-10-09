@@ -1,6 +1,15 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const MobileDetect = require('mobile-detect')
+
+// app.use((req, res, next) => {
+//   let md = new MobileDetect(req.get('user-agent'))
+
+//   console.log( md.mobile() );
+//   console.log( md.userAgent() )
+//   next()
+// })
 
 app.use(express.static('public'))
 
