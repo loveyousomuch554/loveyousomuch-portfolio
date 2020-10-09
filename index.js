@@ -13,6 +13,13 @@ const MobileDetect = require('mobile-detect')
 
 app.use(express.static('public'))
 
+// Mobile version of website
+app.get('/mobile', (req, res) => {
+  let p = path.join(__dirname, 'public', 'mobile.html')
+
+  res.sendFile(p)
+})
+
 // Processing 404 page
 app.use((req, res, next) => {
   let p = path.join(__dirname, 'public', '404.html')
