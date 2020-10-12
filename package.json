@@ -4,6 +4,7 @@
   "description": "This is website with my projects and information about me",
   "main": "index.js",
   "scripts": {
+    "server": "node index.js",
     "dev_server": "nodemon index.js"
   },
   "repository": {
