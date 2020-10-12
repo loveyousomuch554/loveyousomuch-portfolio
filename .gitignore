@@ -1,4 +1,7 @@
-#pics
+# pics
 /public/svgs
 
 node_modules
+
+# Enviroment variables
+.env 
