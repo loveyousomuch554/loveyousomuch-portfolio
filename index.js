@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path')
 const MobileDetect = require('mobile-detect')
+require('dotenv').config()
 
 app.use((req, res, next) => {
   let md = new MobileDetect(req.get('user-agent'))
@@ -26,4 +27,8 @@ app.use((req, res, next) => {
   res.status(404).sendFile(p)
 })
 
-app.listen(8080)
+const PORT = process.env.NODE_ENV === "production" ?
+  process.env.PORT :
+  8080;
+
+app.listen(PORT)
