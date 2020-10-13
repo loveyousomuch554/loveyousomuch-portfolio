@@ -1,8 +1,17 @@
-const express = require('express')
-const app = express()
-const path = require('path')
-const MobileDetect = require('mobile-detect')
+const fs = require('fs')
 require('dotenv').config()
+const path = require('path')
+const https = require('https')
+const express = require('express')
+const MobileDetect = require('mobile-detect')
+
+const privateKey = fs.readFileSync('./server.key');
+const certificate = fs.readFileSync('./server.crt');
+const credentials = {key: privateKey, cert: certificate};
+
+// Create server
+const app = express()
+const httpsServer = https.createServer(credentials,  app)
 
 app.use((req, res, next) => {
   let md = new MobileDetect(req.get('user-agent'))
@@ -31,4 +40,4 @@ const PORT = process.env.NODE_ENV === "production" ?
   process.env.PORT :
   8080;
 
-app.listen(PORT)
+httpsServer.listen(PORT)
