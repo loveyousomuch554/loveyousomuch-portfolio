@@ -47,8 +47,8 @@ httpsServer.listen(PORT, () => {
 const { spawn } = require('child_process')
 
 // Listening to commands while the server is running
-process.stdin.on('data', (command) => {
-  const command = command.toString().trim()
+process.stdin.on('data', (raw_command) => {
+  const command = raw_command.toString().trim()
 
   if (command === 'stop') {
     stopServer()
