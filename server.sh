@@ -1,7 +1,7 @@
 #!/bin/bash
 command=$1
 
-# If input is empty set the variable to null
+# If input is empty set the variable to some value
 if [ -z "$command" ]
 then
     $command="the_author_wants_to_break_the_script"
@@ -29,7 +29,7 @@ else
 fi
 
 # Clearn console after exit from server
-if [[ $?==137 ]]
+if [[ $? == 137 ]]
 then
   clear
 fi
