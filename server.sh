@@ -4,7 +4,7 @@ command=$1
 # If input is empty set the variable to null
 if [ -z "$command" ]
 then
-     $command="huita"
+    $command="the_author_wants_to_break_the_script"
 fi
 
 if [ $command == 'start' ]
