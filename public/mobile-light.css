@@ -52,6 +52,7 @@ body {
   font-style: normal;
   font-weight: lighter;
   text-align: center;
+  font-size: 4vw;
 }
 
 #about_my_path {
@@ -59,6 +60,7 @@ body {
   font-style: normal;
   font-weight: lighter;
   text-align: center;
+  font-size: 4vw;
 }
 
 #my_skills {
@@ -74,6 +76,7 @@ body {
   font-style: normal;
   font-weight: lighter;
   text-align: center;
+  font-size: 4vw;
 }
 
 #skills {
@@ -81,6 +84,7 @@ body {
   font-style: normal;
   font-weight: normal;
   text-align: center;
+  font-size: 4.5vw;
 }
 
 #what_i_worked_on {
@@ -96,6 +100,7 @@ body {
   font-style: normal;
   font-weight: normal;
   text-align: center;
+  font-size: 4vw;
 }
 
 #info_links {
@@ -111,6 +116,7 @@ body {
   font-style: normal;
   font-weight: lighter;
   text-align: center;
+  font-size: 4vw;
 }
 
 #email {
