@@ -42,3 +42,41 @@ httpsServer.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
   console.log(`Start at ${new Date()}`)
 })
+
+
+const { spawn } = require('child_process')
+
+// Listening to commands while the server is running
+process.stdin.on('data', (command) => {
+  const command = command.toString().trim()
+
+  if (command === 'stop') {
+    stopServer()
+  } else if (command === 'restart') {
+    restartServer()
+  }
+})
+
+function stopServer() {
+  const stop = spawn('sudo', ['bash', 'server.sh', 'stop'])
+  spawnHandler(stop)
+}
+
+function restartServer() {
+  const restart = spawn('sudo', ['bash', 'server.sh', 'restart'])
+  spawnHandler(restart)
+}
+
+function spawnHandler(child_process) {
+  child_process.stdout.on('data', (data) => {
+    console.log(`stdout: ${data}`);
+  });
+
+  child_process.stderr.on('data', (data) => {
+    console.error(`stderr: ${data}`);
+  });
+
+  child_process.on('close', (code) => {
+    console.log(`child process exited with code ${code}`);
+  });
+}
