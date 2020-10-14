@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <link rel="icon" href="./favicon.png">
-  <link rel="stylesheet" href="./mobile-light.css">
+  <link rel="stylesheet" href="./mobile-light.css" id="theme-link">
   <title>Loveyousomuch</title>
 </head>
 <body>
@@ -141,5 +141,17 @@
   <div id="theme_container">
     <button id="theme_button">Dark theme</button>
   </div>
+
+  <script>
+    const btn = document.querySelector('#theme_button')
+    const theme = document.querySelector("#theme-link");
+    btn.addEventListener('click', () => {
+      if (theme.getAttribute('href') == 'mobile-light.css') {
+        theme.href = "mobile-dark.css";
+      } else {
+        theme.href = "mobile-light.css";
+      }
+    });
+  </script>
 </body>
 </html>
