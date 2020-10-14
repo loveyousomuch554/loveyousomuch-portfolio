@@ -17,7 +17,7 @@ app.use((req, res, next) => {
   let md = new MobileDetect(req.get('user-agent'))
   const isMobile = md.mobile()
 
-  if(!isMobile) {
+  if (!isMobile) {
     next()
     return
   }
