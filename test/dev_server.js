@@ -31,6 +31,6 @@ app.use((req, res, next) => {
 const PORT = 8080;
 
 app.listen(PORT, () => {
-  console.log(`server running on port ${PORT}\nNODE_ENV = ${process.env.NODE_ENV}`)
+  console.log(`server running on port ${PORT}`)
   console.log(`Start at ${new Date()}`)
 })
