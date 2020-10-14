@@ -24,3 +24,9 @@ then
 else
     echo "invalid command"
 fi
+
+# Clearn console after exit from server
+if [[ $?==130 ]]
+then
+  clear
+fi
