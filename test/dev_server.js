@@ -5,21 +5,12 @@ const MobileDetect = require('mobile-detect')
 // Create server
 const app = express()
 
-app.use((req, res, next) => {
-  let md = new MobileDetect(req.get('user-agent'))
-  const isMobile = md.mobile()
+app.use(express.static('public'))
 
-  if (!isMobile) {
-    next()
-    return
-  }
-
+app.get('/mobile', (req, res) => {
   let p = path.join(__dirname, '..', 'public', 'mobile.html')
   res.sendFile(p)
-  return;
 })
-
-app.use(express.static('public'))
 
 // Processing 404 page
 app.use((req, res, next) => {
