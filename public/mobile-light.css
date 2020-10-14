@@ -1,0 +1,143 @@
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+#Im_Nikita {
+  top: 10px;
+  font-family: Nunito Sans;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7vw;
+}
+#Aspiring__software_engineer {
+  top: 10px;
+  text-align: center;
+  position: relative;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7vw;
+}
+#engineer {
+  color: #645394
+}
+
+#main_tw {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+}
+#main_inst {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+}
+#main_git {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+}
+
+#about_me {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#about_my_path {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#my_skills {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6vw;
+}
+
+#about_skills {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#skills {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+#what_i_worked_on {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6vw;
+  text-align: center;
+}
+
+#come_later {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+#info_links {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6vw;
+  text-align: center;
+}
+
+#about_links {
+  font-family: Source Code Pro;
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#email {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+#links {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+#theme_container {
+  text-align: center;
+}
+
+#theme_button {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  height: 25px;
+  border: 0.5px solid black;
+  background-color: white;
+  padding: 2px;
+}
+
