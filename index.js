@@ -41,6 +41,6 @@ const PORT = process.env.NODE_ENV === "production" ?
   8080;
 
 httpsServer.listen(PORT, () => {
-  console.log(`server running on port ${PORT}\n NODE_ENV = ${process.env.NODE_ENV}`)
+  console.log(`server running on port ${PORT}\nNODE_ENV = ${process.env.NODE_ENV}`)
   console.log(`Start at ${new Date()}`)
 })
