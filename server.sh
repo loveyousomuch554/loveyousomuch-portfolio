@@ -4,7 +4,7 @@ command=$1
 # If input is empty set the variable to null
 if [ -z "$command" ]
 then
-      command="null"
+     $command="huita"
 fi
 
 if [ $command == 'start' ]
