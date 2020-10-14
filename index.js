@@ -40,4 +40,6 @@ const PORT = process.env.NODE_ENV === "production" ?
   process.env.PORT :
   8080;
 
-httpsServer.listen(PORT)
+httpsServer.listen(PORT, () => {
+  console.log(`server running on port ${PORT}\n NODE_ENV = ${process.env.NODE_ENV}`)
+})
