@@ -44,8 +44,3 @@ httpsServer.listen(PORT, () => {
   console.log(`server running on port ${PORT}\n NODE_ENV = ${process.env.NODE_ENV}`)
   console.log(`Start at ${new Date()}`)
 })
-
-setTimeout(() => {
-  console.log(`Close at ${new Date()}`)
-  process.exit()
-}, (1000*60)*10);
