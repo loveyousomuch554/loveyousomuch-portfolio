@@ -34,3 +34,29 @@ app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
   console.log(`Start at ${new Date()}`)
 })
+
+
+// Test command
+process.stdin.on('data', (command) => {
+  const { spawn } = require('child_process')
+
+  if (command.toString().trim() === 'stop') {
+    doSomething(spawn)
+  }
+})
+
+function doSomething(spawn) {
+  const ls = spawn('ls', ['-a'])
+
+  ls.stdout.on('data', (data) => {
+    console.log(`stdout: ${data}`);
+  });
+
+  ls.stderr.on('data', (data) => {
+    console.error(`stderr: ${data}`);
+  });
+
+  ls.on('close', (code) => {
+    console.log(`child process exited with code ${code}`);
+  });
+}
