@@ -36,9 +36,7 @@ app.use((req, res, next) => {
   res.status(404).sendFile(p)
 })
 
-const PORT = process.env.NODE_ENV === "production" ?
-  process.env.PORT :
-  8080;
+const PORT = process.env.PORT
 
 httpsServer.listen(PORT, () => {
   console.log(`server running on port ${PORT}\nNODE_ENV = ${process.env.NODE_ENV}`)
