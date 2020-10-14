@@ -69,7 +69,7 @@ function restartServer() {
 
 function spawnHandler(child_process) {
   child_process.stdout.on('data', (data) => {
-    console.log(`stdout: ${data}`);
+    console.log(data.toString())
   });
 
   child_process.stderr.on('data', (data) => {
