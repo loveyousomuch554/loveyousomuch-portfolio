@@ -5,8 +5,8 @@ const https = require('https')
 const express = require('express')
 const MobileDetect = require('mobile-detect')
 
-const privateKey = fs.readFileSync('./server.key');
-const certificate = fs.readFileSync('./server.crt');
+const privateKey = fs.readFileSync('../conf/server.key');
+const certificate = fs.readFileSync('../conf/server.crt');
 const credentials = {key: privateKey, cert: certificate};
 
 // Create server
@@ -16,7 +16,7 @@ const httpsServer = https.createServer(credentials,  app)
 app.use((req, res, next) => {
   let md = new MobileDetect(req.get('user-agent'))
   const isMobile = md.mobile()
-  
+
   if(!isMobile) {
     next()
     return
@@ -48,4 +48,4 @@ httpsServer.listen(PORT, () => {
 setTimeout(() => {
   console.log(`Close at ${new Date()}`)
   process.exit()
-}, 5000);
+}, (1000*60)*10);
