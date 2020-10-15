@@ -26,6 +26,7 @@ then
     sudo npm run server
 elif [ $command == 'pull&start' ]
 then    
+    # Load changes from github and start server
     cd /opt/bitnami/apps/portfolio
     echo "Update site version..."
     sudo git pull
@@ -33,6 +34,7 @@ then
     sudo npm run server
 elif [ $command == 'pull' ]
 then    
+    # Just load changes
     cd /opt/bitnami/apps/portfolio
     echo "Update site version..."
     sudo git pull
