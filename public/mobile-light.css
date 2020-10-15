@@ -147,6 +147,10 @@ a:visited {
 }
 
 #theme_button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: bold;
