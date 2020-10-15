@@ -3,6 +3,13 @@ body {
   justify-content: center;
 }
 
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
 #Im_Nikita {
   top: 10px;
   font-family: Nunito Sans;
@@ -21,7 +28,7 @@ body {
   font-size: 7vw;
 }
 #engineer {
-  color: #645394
+  color: #645394;
 }
 
 #main_tw {
@@ -124,6 +131,7 @@ body {
   font-style: normal;
   font-weight: bold;
   text-align: center;
+  color:rgba(0,0,0,1)
 }
 
 #links {
