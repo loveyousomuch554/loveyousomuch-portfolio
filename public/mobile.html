@@ -139,17 +139,19 @@
   </div>
 
   <div id="theme_container">
-    <button id="theme_button">Dark theme</button>
+    <input type="button" id="theme_button" value="Dark theme">
   </div>
 
   <script>
     const btn = document.querySelector('#theme_button')
-    const theme = document.querySelector("#theme-link");
+    const theme = document.querySelector("#theme-link")
     btn.addEventListener('click', () => {
-      if (theme.getAttribute('href') == 'mobile-light.css') {
+      if (theme.getAttribute('href') === 'mobile-light.css') {
         theme.href = "mobile-dark.css";
+        btn.value = 'Light theme'
       } else {
         theme.href = "mobile-light.css";
+        btn.value = 'Dark theme'
       }
     });
   </script>

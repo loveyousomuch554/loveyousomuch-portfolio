@@ -153,6 +153,8 @@ a:visited {
   font-weight: bold;
   height: 25px;
   border: 0.5px solid black;
-  background-color: white;
+  background-color: rgb(28, 28, 30);
+  color: rgb(242, 242, 247);
+  border-color: rgb(242, 242, 247);
   padding: 2px;
 }
