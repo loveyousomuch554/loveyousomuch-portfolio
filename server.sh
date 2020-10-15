@@ -24,6 +24,18 @@ then
     echo "Restarting server..."
     sudo kill -9 $(sudo lsof -t -i:443)
     sudo npm run server
+elif [ $command == 'pull&start' ]
+then    
+    cd /opt/bitnami/apps/portfolio
+    echo "Update site version..."
+    sudo git pull
+    echo "Loading the server..."
+    sudo npm run server
+elif [ $command == 'pull' ]
+then    
+    cd /opt/bitnami/apps/portfolio
+    echo "Update site version..."
+    sudo git pull
 else
     echo "invalid command"
 fi
