@@ -21,21 +21,21 @@ const httpsServer = https.createServer(credentials,  app)
 //   res.sendFile(path.join(__dirname, 'public', 'mobile-dark.css'))
 // })
 
-app.use('/', (req, res, next) => {
-  let md = new MobileDetect(req.get('user-agent'))
+app.use('/static', express.static('public'))
+
+app.get('/', (req, res) => {
+  const md = new MobileDetect(req.get('user-agent'))
   const isMobile = md.mobile()
 
   if (!isMobile) {
-    next()
-    return
+    res.send(path.join(__dirname, 'public', 'index.html'))
+    return;
   }
 
-  let p = path.join(__dirname, 'public', 'mobile.html')
-  res.sendFile(p)
+  // Send the mobile version of the site
+  res.sendFile(path.join(__dirname, 'public', 'mobile.html'))
   return;
 })
-
-app.use(express.static('public'))
 
 // Processing 404 page
 app.use((req, res, next) => {
