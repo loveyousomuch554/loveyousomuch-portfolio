@@ -3,6 +3,7 @@ body {
   justify-content: center;
   background-color: rgb(28, 28, 30);
   color: rgb(242, 242, 247);
+  padding-bottom: 30px;
 }
 
 a:link {
