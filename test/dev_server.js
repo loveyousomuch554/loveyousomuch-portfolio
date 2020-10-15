@@ -17,7 +17,7 @@ app.use((req, res, next) => {
   res.status(404).sendFile(p)
 })
 
-const PORT = 8080;
+const PORT = 80;
 
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
