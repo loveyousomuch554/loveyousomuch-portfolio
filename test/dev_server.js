@@ -4,7 +4,7 @@ const MobileDetect = require('mobile-detect')
 
 // Create server
 const app = express()
-app.use(express.static('public'))
+app.use('/', express.static('public'))
 
 // app.get('/mobile', (req, res) => {
 //   let p = path.join(__dirname, '..', 'public', 'mobile.html')

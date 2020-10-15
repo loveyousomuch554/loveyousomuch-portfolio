@@ -13,13 +13,13 @@ const credentials = {key: privateKey, cert: certificate};
 const app = express()
 const httpsServer = https.createServer(credentials,  app)
 
-app.get('/mobile-light.css', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'mobile-light.css'))
-})
+// app.get('/mobile-light.css', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'mobile-light.css'))
+// })
 
-app.get('/mobile-dark.css', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'mobile-dark.css'))
-})
+// app.get('/mobile-dark.css', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'public', 'mobile-dark.css'))
+// })
 
 app.use('/', (req, res, next) => {
   let md = new MobileDetect(req.get('user-agent'))
@@ -45,13 +45,13 @@ app.use((req, res, next) => {
 })
 
 const PORT = process.env.PORT
-
 httpsServer.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
   console.log(`Start at ${new Date()}`)
 })
 
 
+/* CONSOLE COMMANDS */
 const { spawn } = require('child_process')
 
 // Listening to commands while the server is running
