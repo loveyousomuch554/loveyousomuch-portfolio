@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <link rel="icon" href="./favicon.png">
-  <link rel="stylesheet" href="/static/mobile-light.css" id="theme-link">
+  <!-- <link rel="stylesheet" href="/static/mobile-light.css" id="theme-link"> -->
   <title>Loveyousomuch</title>
 </head>
 <body>
@@ -144,7 +144,23 @@
 
   <script>
     const btn = document.querySelector('#theme_button')
-    const theme = document.querySelector("#theme-link")
+    
+    let href;
+    if (isItDayNow()) {
+      href = "/static/mobile-light.css";
+      btn.value = 'Dark theme'
+    } else {
+      href = "/static/mobile-dark.css";
+      btn.value = 'Light theme'
+    }
+
+    const link = document.createElement('link')
+    link.rel = 'stylesheet'
+    link.href = href
+    link.id = 'theme-link'
+    document.head.appendChild(link)
+
+    const theme = document.getElementById("theme-link")
     btn.addEventListener('click', () => {
       if (theme.getAttribute('href') === '/static/mobile-light.css') {
         theme.href = "/static/mobile-dark.css";
@@ -154,6 +170,15 @@
         btn.value = 'Dark theme'
       }
     });
+
+    function isItDayNow() {
+      const hours = new Date().getHours()
+
+      if (hours > 7 && hours < 18) {
+        return true
+      }
+      return false
+    }
   </script>
 </body>
 </html>
