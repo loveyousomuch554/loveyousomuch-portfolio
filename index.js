@@ -13,14 +13,6 @@ const credentials = {key: privateKey, cert: certificate};
 const app = express()
 const httpsServer = https.createServer(credentials,  app)
 
-// app.get('/mobile-light.css', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public', 'mobile-light.css'))
-// })
-
-// app.get('/mobile-dark.css', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public', 'mobile-dark.css'))
-// })
-
 app.use('/static', express.static('public'))
 
 app.get('/', (req, res) => {
@@ -40,7 +32,6 @@ app.get('/', (req, res) => {
 // Processing 404 page
 app.use((req, res, next) => {
   let p = path.join(__dirname, 'public', '404.html')
-
   res.status(404).sendFile(p)
 })
 
