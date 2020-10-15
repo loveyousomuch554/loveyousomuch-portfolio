@@ -13,7 +13,7 @@ const credentials = {key: privateKey, cert: certificate};
 const app = express()
 const httpsServer = https.createServer(credentials,  app)
 
-app.use((req, res, next) => {
+app.use('/', (req, res, next) => {
   let md = new MobileDetect(req.get('user-agent'))
   const isMobile = md.mobile()
 

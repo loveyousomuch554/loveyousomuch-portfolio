@@ -6,7 +6,15 @@ const MobileDetect = require('mobile-detect')
 const app = express()
 app.use(express.static('public'))
 
-app.get('/mobile', (req, res) => {
+// app.get('/mobile', (req, res) => {
+//   let p = path.join(__dirname, '..', 'public', 'mobile.html')
+//   res.sendFile(p)
+// })
+
+app.use('/mobile', (req, res, next) => {
+  if(req.query.a == '1') {
+    next()
+  }
   let p = path.join(__dirname, '..', 'public', 'mobile.html')
   res.sendFile(p)
 })
