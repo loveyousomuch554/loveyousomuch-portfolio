@@ -27,6 +27,14 @@ app.use('/', (req, res, next) => {
   return;
 })
 
+app.get('/mobile-light.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'mobile-light.css'))
+})
+
+app.get('/mobile-dark.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'mobile-dark.css'))
+})
+
 app.use(express.static('public'))
 
 // Processing 404 page

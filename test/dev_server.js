@@ -19,6 +19,14 @@ app.use('/mobile', (req, res, next) => {
   res.sendFile(p)
 })
 
+app.get('/mobile-light.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'mobile-light.css'))
+})
+
+app.get('/mobile-dark.css', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'mobile-dark.css'))
+})
+
 // Processing 404 page
 app.use((req, res, next) => {
   let p = path.join(__dirname, '..', 'public', '404.html')
