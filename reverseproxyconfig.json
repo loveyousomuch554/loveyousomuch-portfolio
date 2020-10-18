@@ -2,7 +2,7 @@
   "routes": [
     {
       "route": "/app1",
-      "address": "http://www.example.org"
+      "address": "http://localhost:1001"
     }
   ]
 }
