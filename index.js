@@ -16,7 +16,7 @@ const httpsServer = https.createServer(credentials,  app)
 
 app.use('/static', express.static('public'))
 
-app.use(projectsRouter)
+app.use('/projects', projectsRouter)
 
 app.get('/', (req, res) => {
   const md = new MobileDetect(req.get('user-agent'))
