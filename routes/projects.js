@@ -1,8 +1,11 @@
 const express = require('express')
 const Router = express.Router()
+const { routes: project_routes } = require('../reverseproxyconfig.json')
+const { createProxyMiddleware } = require('http-proxy-middleware')
+// https://loveyousomuch554.dev/projects/
 
-Router.get('/projects', (req, res) => {
-  res.send('Hello World!')
-})
+for({route, address} of project_routes) {
+  Router.use(route, createProxyMiddleware({ target: address, changeOrigin: true }));
+}
 
 exports.Router = Router
