@@ -6,7 +6,7 @@ const { Router: projectsRouter } = require('../routes/projects')
 const app = express()
 app.use('/static', express.static('public'))
 
-app.use('/projects', projectsRouter)
+app.use(projectsRouter)
 
 app.get('/mobile', (req, res, next) => {
   let p = path.join(__dirname, '..', 'public', 'mobile.html')
