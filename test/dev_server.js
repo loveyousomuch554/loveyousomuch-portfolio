@@ -8,7 +8,7 @@ app.use('/static', express.static('public'))
 
 app.use(projectsRouter)
 
-app.get('/mobile', (req, res, next) => {
+app.get('/mobile', (req, res) => {
   let p = path.join(__dirname, '..', 'public', 'mobile.html')
   res.sendFile(p)
 })
