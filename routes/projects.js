@@ -1,5 +1,5 @@
-const Router = express.Router()
 const express = require('express')
+const Router = express.Router()
 const { createProxyMiddleware } = require('http-proxy-middleware')
 const { routes: project_routes } = require('../reverseproxyconfig.json')
 
