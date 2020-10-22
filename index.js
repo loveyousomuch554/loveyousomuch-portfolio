@@ -32,6 +32,11 @@ app.get('/', (req, res) => {
   return;
 })
 
+// Redirect on russian version of resume
+app.get('/ru/resume', (req, res) => {
+  res.redirect('/static/pictures/loveyousomuch554.pdf')
+})
+
 // Processing 404 page
 app.use((req, res, next) => {
   let p = path.join(__dirname, 'public', '404.html')

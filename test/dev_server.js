@@ -13,6 +13,10 @@ app.get('/mobile', (req, res) => {
   res.sendFile(p)
 })
 
+app.get('/ru/resume', (req, res) => {
+  res.redirect('/static/pictures/loveyousomuch554.pdf')
+})
+
 // Processing 404 page
 app.use((req, res, next) => {
   let p = path.join(__dirname, '..', 'public', '404.html')
