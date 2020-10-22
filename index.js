@@ -18,11 +18,13 @@ app.use('/static', express.static('public'))
 
 app.use(projectsRouter)
 
+// Main page
 app.get('/', (req, res) => {
   const md = new MobileDetect(req.get('user-agent'))
   const isMobile = md.mobile()
 
   if (!isMobile) {
+    // Send desktop version of the site
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
     return;
   }
@@ -38,7 +40,7 @@ app.get('/ru/resume', (req, res) => {
 })
 
 // Processing 404 page
-app.use((req, res, next) => {
+app.use((req, res) => {
   let p = path.join(__dirname, 'public', '404.html')
   res.status(404).sendFile(p)
 })
