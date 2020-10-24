@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "This is website with my projects and information about me",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "server": "node index.js",
