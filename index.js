@@ -39,6 +39,10 @@ app.get('/ru/resume', (req, res) => {
   res.redirect('/static/pictures/loveyousomuch554.pdf')
 })
 
+app.get('/en/resume', (req, res) => {
+  res.redirect('/static/pictures/resume_en.pdf')
+})
+
 // Processing 404 page
 app.use((req, res) => {
   let p = path.join(__dirname, 'public', '404.html')
