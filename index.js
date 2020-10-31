@@ -8,7 +8,7 @@ const { Router: projectsRouter } = require('./routes/projects')
 
 const privateKey = fs.readFileSync('../conf/server.key');
 const certificate = fs.readFileSync('../conf/server.crt');
-const credentials = {key: privateKey, cert: certificate};
+const credentials = { key: privateKey, cert: certificate };
 
 // Create server
 const app = express()
@@ -36,11 +36,11 @@ app.get('/', (req, res) => {
 
 // Redirect on russian version of resume
 app.get('/ru/resume', (req, res) => {
-  res.redirect('/static/pictures/loveyousomuch554.pdf')
+  res.redirect('/static/pdf/resume_ru.pdf')
 })
 
 app.get('/en/resume', (req, res) => {
-  res.redirect('/static/pictures/resume_en.pdf')
+  res.redirect('/static/pdf/resume_en.pdf')
 })
 
 // Processing 404 page
