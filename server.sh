@@ -11,7 +11,7 @@ if [ $command == 'start' ]
 then
     # Start server with pm2
     cd /opt/bitnami/apps/portfolio
-    pm2 start start_server.sh --name site --no-autorestart --log /var/log/portfolio
+    pm2 start start_server.sh --name site --no-autorestart
 elif [ $command == 'stop' ]
 then
     # Kill process on port 443 
