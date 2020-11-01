@@ -4,7 +4,7 @@
   You can find there all my contacts and detailed information about me, also find out more about my projects. 🥴
 </p>
 <h2>
-  <a href="https://loveyousomuch554.dev">
+  <a href="https://loveyousomuch554.dev" target="_blank">
     <img src="https://loveyousomuch554.dev/static/svgs/link.svg" alt="link_on_site">
   <a/>
 </h2>
