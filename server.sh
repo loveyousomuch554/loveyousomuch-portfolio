@@ -8,11 +8,10 @@ then
 fi
 
 if [ $command == 'start' ]
-then    
-    # Star npm script
-    echo "Loading the server..."
+then
+    # Start server with pm2
     cd /opt/bitnami/apps/portfolio
-    sudo npm run server
+    pm2 start start_server.sh --name site --no-autorestart --log /var/log/portfolio
 elif [ $command == 'stop' ]
 then
     # Kill process on port 443 
