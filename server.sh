@@ -22,7 +22,7 @@ then
     cd /opt/bitnami/apps/portfolio
     echo "Restarting server..."
     sudo kill -9 $(sudo lsof -t -i:443)
-    sudo npm run server
+    pm2 start start_server.sh --name site --no-autorestart
 elif [ $command == 'pull&start' ]
 then    
     # Load changes from github and start server
@@ -30,7 +30,7 @@ then
     echo "Update site version..."
     sudo git pull
     echo "Loading the server..."
-    sudo npm run server
+    pm2 start start_server.sh --name site --no-autorestart
 elif [ $command == 'pull' ]
 then    
     # Just load changes
