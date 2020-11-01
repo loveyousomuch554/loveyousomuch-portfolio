@@ -38,7 +38,7 @@ function startAnimations() {
 
   // Bottom svgs
   social_svg.style.top = '2582px'
-  window_about_links.style.top = '2782px'
+  window_about_links.style.top = '2793px'
 }
 
 console.log('%cWhat are you doing here?', 'color:#645394; font-size: 50px; font-family: Source Code Pro;')

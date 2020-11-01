@@ -443,6 +443,17 @@ body {
   transform: matrix(1,0,0,1,0,0);
 }
 
+#resume {
+  position: absolute;
+  left: 4.3em;
+  top: 2750px;
+  text-align: left;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 #social_svg {
   position: absolute;
   width: 926px;
@@ -460,7 +471,7 @@ body {
   width: 350px;
   height: 350px;
   left: 90px;
-  top: 2787px;
+  top: 2807px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
