@@ -4,7 +4,6 @@ const path = require('path')
 const https = require('https')
 const express = require('express')
 const MobileDetect = require('mobile-detect')
-const { Router: projectsRouter } = require('./routes/projects')
 
 const privateKey = fs.readFileSync('../conf/server.key');
 const certificate = fs.readFileSync('../conf/server.crt');
@@ -15,8 +14,6 @@ const app = express()
 const httpsServer = https.createServer(credentials,  app)
 
 app.use('/static', express.static('public'))
-
-app.use(projectsRouter)
 
 // Main page
 app.get('/', (req, res) => {
