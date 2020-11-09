@@ -70,7 +70,7 @@ body {
 #main_page {
   position: absolute;
   right: 90px;
-  top: -90px;
+  top: -110px;
   height: 906px;
   width: 738px;
   transition: top 0.7s;
@@ -115,7 +115,7 @@ body {
 }
 
 #about_me {
-  top: 710px;
+  top: 670px;
   margin: auto;
   position: relative;
   overflow: visible;
@@ -136,12 +136,12 @@ body {
 
 #about_my_path {
   left: 4.5em;
-  top: 868px;
+  top: 780px;
   position: absolute;
   overflow: visible;
   width: 616px;
   white-space: nowrap;
-  line-height: 50px;
+  line-height: 30px;
   margin-top: -12.5px;
   text-align: left;
   font-family: Source Code Pro;
@@ -165,8 +165,8 @@ body {
 }
 
 #skills {
-  left: 1.5em;
-  top: 1310px;
+  left: 1.4em;
+  top: 890px;
   position: absolute;
   overflow: visible;
   width: 227px;
@@ -183,8 +183,8 @@ body {
 }
 
 #about_skills {
-  left: 3.5em;
-  top: 1400px;
+  left: 4.3em;
+  top: 980px;
   position: absolute;
   overflow: visible;
   width: 1126px;
@@ -195,13 +195,13 @@ body {
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 20px;
   color: rgba(0,0,0,1);
 }
 
 #frontend {
   left: 3.4em;
-  top: 1500px;
+  top: 1080px;
   position: absolute;
   overflow: visible;
   width: 121px;
@@ -218,7 +218,7 @@ body {
 
 #front_skills {
   left: 10em;
-  top: 1500px;
+  top: 1080px;
   position: absolute;
   overflow: visible;
   width: 466px;
@@ -235,7 +235,7 @@ body {
 
 #backend {
   left: 3.4em;
-  top: 1550px;
+  top: 1130px;
   position: absolute;
   overflow: visible;
   width: 121px;
@@ -252,7 +252,7 @@ body {
 
 #back_skills {
   left: 10em;
-  top: 1556px;
+  top: 1136px;
   position: absolute;
   overflow: visible;
   width: 496px;
@@ -269,12 +269,12 @@ body {
 
 #tools {
   left: 3.4em;
-  top: 1650px;
+  top: 1230px;
   position: absolute;
   overflow: visible;
   width: 91px;
   white-space: nowrap;
-  line-height: 50px;
+  line-height: 30px;
   margin-top: -12.5px;
   text-align: left;
   font-family: Source Code Pro;
@@ -286,7 +286,7 @@ body {
 
 #tools_info {
   left: 10em;
-  top: 1650px;
+  top: 1250px;
   position: absolute;
   overflow: visible;
   width: 151px;
@@ -306,7 +306,7 @@ body {
   position: absolute;
   width: 350px;
   height: 350px;
-  top: 1405px;
+  top: 985px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -315,7 +315,7 @@ body {
 
 #what_i_worked_on {
   left: 1.5em;
-  top: 1735px;
+  top: 1315px;
   position: absolute;
   overflow: visible;
   width: 483px;
@@ -333,7 +333,7 @@ body {
 
 #come_later {
   left: 3.4em;
-  top: 1870px;
+  top: 1450px;
   position: absolute;
   overflow: visible;
   width: 736px;
@@ -353,7 +353,7 @@ body {
   position: absolute;
   width: 1000.219px;
   height: 632.26px;
-  top: 1805px;
+  top: 1385px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -361,8 +361,8 @@ body {
 }
 
 #info_links {
-  left: 1.5em;
-  top: 2460px;
+  left: 1.4em;
+  top: 2040px;
   position: absolute;
   overflow: visible;
   width: 847px;
@@ -379,8 +379,8 @@ body {
 }
 
 #about_links {
-  left: 3.5em;
-  top: 2550px;
+  left: 4.3em;
+  top: 2125px;
   position: absolute;
   overflow: visible;
   width: 781px;
@@ -391,13 +391,13 @@ body {
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 20px;
   color: rgba(0,0,0,1);
 }
 
 #email {
   left: 4.3em;
-  top: 2650px;
+  top: 2230px;
   position: absolute;
   overflow: visible;
   width: 438px;
@@ -419,7 +419,7 @@ body {
   width: 32px;
   height: 30px;
   left: 120px;
-  top: 2700px;
+  top: 2280px;
   transform: matrix(1,0,0,1,0,0);
 }
 
@@ -429,7 +429,7 @@ body {
   width: 32px;
   height: 30px;
   left: 185px;
-  top: 2700px;
+  top: 2280px;
   transform: matrix(1,0,0,1,0,0);
 }
 
@@ -439,14 +439,14 @@ body {
   width: 42px;
   height: 32px;
   left: 244px;
-  top: 2700px;
+  top: 2280px;
   transform: matrix(1,0,0,1,0,0);
 }
 
 #resume {
   position: absolute;
   left: 4.3em;
-  top: 2750px;
+  top: 2330px;
   text-align: left;
   font-family: Nunito Sans;
   font-style: normal;
@@ -459,7 +459,7 @@ body {
   width: 926px;
   height: 500.711px;
   right: 30px;
-  top: 2587px;
+  top: 2167px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -471,7 +471,7 @@ body {
   width: 350px;
   height: 350px;
   left: 90px;
-  top: 2807px;
+  top: 2387px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -480,7 +480,7 @@ body {
 
 #bottom_logo {
   left: 90px;
-  top: 3187px;
+  top: 2767px;
   position: absolute;
   overflow: visible;
   width: 198px;
