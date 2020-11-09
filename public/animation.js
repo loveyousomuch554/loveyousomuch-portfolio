@@ -8,7 +8,7 @@ function startAnimations() {
   Aspiring__software_engineer.style.top = '223px'
 
   // Main svg
-  main_page.style.top = '-100px'
+  main_page.style.top = '-120px'
 
   // Icons on the top page
   main_tw.style.top = '463px'
@@ -16,29 +16,26 @@ function startAnimations() {
   main_git.style.top = '459px'
 
   // About my experience
-  about_me.style.top = '700px'
-
-  // Svg near about my experience 
-  about_my_path_svg.style.top = '805px'
+  about_me.style.top = '660px'
 
   // Skills
-  skills.style.top = '1300px'
+  skills.style.top = '885px'
 
   // Svg near skills 
-  window_about_skills.style.top = '1400px'
+  window_about_skills.style.top = '980px'
 
   // what_i_worked_on
-  what_i_worked_on.style.top = '1725px'
+  what_i_worked_on.style.top = '1310px'
 
   // Svg what_i_worked_on
-  projects.style.top = '1800px'
+  projects.style.top = '1380px'
 
   // Links
-  info_links.style.top = '2450px'
+  info_links.style.top = '2035px'
 
   // Bottom svgs
-  social_svg.style.top = '2582px'
-  window_about_links.style.top = '2802px'
+  social_svg.style.top = '2161px'
+  window_about_links.style.top = '2382px'
 }
 
 console.log('%cWhat are you doing here?', 'color:#645394; font-size: 50px; font-family: Source Code Pro;')
