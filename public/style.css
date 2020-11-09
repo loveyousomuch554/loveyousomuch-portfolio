@@ -70,7 +70,7 @@ body {
 #main_page {
   position: absolute;
   right: 90px;
-  top: -110px;
+  top: -130px;
   height: 906px;
   width: 738px;
   transition: top 0.7s;
@@ -136,7 +136,7 @@ body {
 
 #about_my_path {
   left: 4.5em;
-  top: 780px;
+  top: 690px;
   position: absolute;
   overflow: visible;
   width: 616px;
@@ -165,8 +165,8 @@ body {
 }
 
 #skills {
-  left: 1.4em;
-  top: 890px;
+  left: 1.9em;
+  top: 800px;
   position: absolute;
   overflow: visible;
   width: 227px;
@@ -175,33 +175,16 @@ body {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
-	font-size: 60px;
+	font-size: 45px;
   color: rgba(0,0,0,1);
   transition: top 0.5s;
   transition-timing-function: ease;
   transition-delay: 150ms;
 }
 
-#about_skills {
-  left: 4.3em;
-  top: 980px;
-  position: absolute;
-  overflow: visible;
-  width: 1126px;
-  white-space: nowrap;
-  line-height: 40px;
-  margin-top: -12.5px;
-  text-align: left;
-  font-family: Source Code Pro;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 20px;
-  color: rgba(0,0,0,1);
-}
-
 #frontend {
   left: 3.4em;
-  top: 1080px;
+  top: 900px;
   position: absolute;
   overflow: visible;
   width: 121px;
@@ -218,7 +201,7 @@ body {
 
 #front_skills {
   left: 10em;
-  top: 1080px;
+  top: 900px;
   position: absolute;
   overflow: visible;
   width: 466px;
@@ -235,7 +218,7 @@ body {
 
 #backend {
   left: 3.4em;
-  top: 1130px;
+  top: 950px;
   position: absolute;
   overflow: visible;
   width: 121px;
@@ -252,7 +235,7 @@ body {
 
 #back_skills {
   left: 10em;
-  top: 1136px;
+  top: 956px;
   position: absolute;
   overflow: visible;
   width: 496px;
@@ -269,7 +252,7 @@ body {
 
 #tools {
   left: 3.4em;
-  top: 1230px;
+  top: 1050px;
   position: absolute;
   overflow: visible;
   width: 91px;
@@ -286,7 +269,7 @@ body {
 
 #tools_info {
   left: 10em;
-  top: 1250px;
+  top: 1070px;
   position: absolute;
   overflow: visible;
   width: 151px;
@@ -306,7 +289,7 @@ body {
   position: absolute;
   width: 350px;
   height: 350px;
-  top: 985px;
+  top: 900px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -314,8 +297,8 @@ body {
 }
 
 #what_i_worked_on {
-  left: 1.5em;
-  top: 1315px;
+  left: 1.9em;
+  top: 1235px;
   position: absolute;
   overflow: visible;
   width: 483px;
@@ -324,45 +307,37 @@ body {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 45px;
   color: rgba(0,0,0,1);
   transition: top 0.5s;
   transition-timing-function: ease;
   transition-delay: 150ms;
 }
 
-#come_later {
+#projects {
   left: 3.4em;
-  top: 1450px;
+  top: 1350px;
   position: absolute;
   overflow: visible;
   width: 736px;
   white-space: nowrap;
-  line-height: 50px;
   margin-top: -12.5px;
   text-align: left;
   font-family: Source Code Pro;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 22px;
   color: rgba(0,0,0,1);
 }
 
-#projects {
-  right: 90px;
-  position: absolute;
-  width: 1000.219px;
-  height: 632.26px;
-  top: 1385px;
-  overflow: visible;
-  transition: top 0.5s;
-  transition-timing-function: ease;
-  transition-delay: 150ms;
+#projects_description {
+  font-size: 15px;
+  font-style: Source Code Pro;
 }
 
 #info_links {
-  left: 1.4em;
-  top: 2040px;
+  left: 1.9em;
+  top: 1800px;
   position: absolute;
   overflow: visible;
   width: 847px;
@@ -371,7 +346,7 @@ body {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 60px;
+  font-size: 45px;
   color: rgba(0,0,0,1);
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -380,12 +355,12 @@ body {
 
 #about_links {
   left: 4.3em;
-  top: 2125px;
+  top: 1885px;
   position: absolute;
   overflow: visible;
   width: 781px;
   white-space: nowrap;
-  line-height: 50px;
+  line-height: 30px;
   margin-top: -12.5px;
   text-align: left;
   font-family: Source Code Pro;
@@ -397,7 +372,7 @@ body {
 
 #email {
   left: 4.3em;
-  top: 2230px;
+  top: 1990px;
   position: absolute;
   overflow: visible;
   width: 438px;
@@ -419,7 +394,7 @@ body {
   width: 32px;
   height: 30px;
   left: 120px;
-  top: 2280px;
+  top: 2040px;
   transform: matrix(1,0,0,1,0,0);
 }
 
@@ -429,7 +404,7 @@ body {
   width: 32px;
   height: 30px;
   left: 185px;
-  top: 2280px;
+  top: 2040px;
   transform: matrix(1,0,0,1,0,0);
 }
 
@@ -439,14 +414,14 @@ body {
   width: 42px;
   height: 32px;
   left: 244px;
-  top: 2280px;
+  top: 2040px;
   transform: matrix(1,0,0,1,0,0);
 }
 
 #resume {
   position: absolute;
   left: 4.3em;
-  top: 2330px;
+  top: 2090px;
   text-align: left;
   font-family: Nunito Sans;
   font-style: normal;
@@ -459,7 +434,7 @@ body {
   width: 926px;
   height: 500.711px;
   right: 30px;
-  top: 2167px;
+  top: 1927px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -471,7 +446,7 @@ body {
   width: 350px;
   height: 350px;
   left: 90px;
-  top: 2387px;
+  top: 2147px;
   overflow: visible;
   transition: top 0.5s;
   transition-timing-function: ease;
@@ -480,7 +455,7 @@ body {
 
 #bottom_logo {
   left: 90px;
-  top: 2767px;
+  top: 2527px;
   position: absolute;
   overflow: visible;
   width: 198px;
