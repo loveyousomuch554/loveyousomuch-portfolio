@@ -31,7 +31,3 @@ function startAnimations() {
   social_svg.style.top = '1922px'
   window_about_links.style.top = '2142px'
 }
-
-console.log('%cWhat are you doing here?', 'color:#645394; font-size: 50px; font-family: Source Code Pro;')
-console.log('%cMy mail, just in case <3', 'color:#645394; font-size: 50px; font-family: Nunito Sans;')
-console.log('%cloveyousomuch554@gmail.com', 'color:#645394; font-size: 70px; font-family: Nunito Sans;')
