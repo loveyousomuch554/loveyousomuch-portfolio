@@ -98,6 +98,11 @@ a:visited {
   font-size: 4vw;
 }
 
+#project_links {
+  color: rgb(32, 32, 255);
+  font-size: 14px;
+}
+
 #info_links {
   font-family: Nunito Sans;
   font-style: normal;

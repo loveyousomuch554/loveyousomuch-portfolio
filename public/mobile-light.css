@@ -95,6 +95,11 @@ a:visited {
   font-size: 4vw;
 }
 
+#project_links {
+  color: blue;
+  font-size: 14px;
+}
+
 #info_links {
   font-family: Nunito Sans;
   font-style: normal;
