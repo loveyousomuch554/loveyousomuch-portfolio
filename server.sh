@@ -23,13 +23,14 @@ then
     echo "Restarting server..."
     sudo kill -9 $(sudo lsof -t -i:443)
     pm2 start start_server.sh --name site --no-autorestart
-elif [ $command == 'pull&start' ]
+elif [ $command == 'p&re' ]
 then    
     # Load changes from github and start server
     cd /opt/bitnami/apps/portfolio
     echo "Update site version..."
     sudo git pull
     echo "Loading the server..."
+    sudo kill -9 $(sudo lsof -t -i:443)
     pm2 start start_server.sh --name site --no-autorestart
 elif [ $command == 'pull' ]
 then    
