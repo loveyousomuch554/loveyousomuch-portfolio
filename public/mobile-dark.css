@@ -66,28 +66,12 @@ a:visited {
   font-size: 4vw;
 }
 
-#about_my_path {
-  font-family: Source Code Pro;
-  font-style: normal;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 4vw;
-}
-
 #my_skills {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
   text-align: center;
   font-size: 6vw;
-}
-
-#about_skills {
-  font-family: Source Code Pro;
-  font-style: normal;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 4vw;
 }
 
 #skills {
