@@ -48,32 +48,14 @@
   
   <div id="about_me">
 		<span>
-			I’m 17 years old student, currently focused on learning JavaScript, NodeJs <br/>
-			and React. Over the past 7 months, I have learned the basics of the language <br/>
-			and gained educational experience in the field of web technologies.
+			At the moment I am studying at a college in the profession of information systems and programming.
+      In parallel, study web technologies and improve my knowledge through practice.
+      Сurrently looking for an internship as a frontend/backend developer.
 		</span>
   </div><br>
-  
-  <div id="about_my_path">
-		<span>
-			During this time, I practiced creating projects. <br> 
-			Gained experience and improved code quality, <br>
-			learned to solve problems and think differently. <br> 
-			I am well versed in the language <br> 
-			and can independently find the necessary material <br>
-			and study it.
-		</span>
-  </div><br>
-  
+
   <div id="my_skills">
 		<span>My skills</span>
-  </div>
-  
-  <div id="about_skills">
-		<span>
-			Through my research, I have gained a good understanding of web technology. <br/>
-			And I tried it in practice.
-		</span>
   </div><br>
   
   <div id="skills">
@@ -81,7 +63,7 @@
 			<span>Frontend:</span>
 		</div>
 		<div id="front_skills">
-			<span>JavaScript ES6+, React, Webpack</span>
+			<span>JavaScript ES6+, React, Webpack, HTML5/CSS3</span>
 		</div><br>
 		<div id="backend">
 			<span>Backend:</span>
@@ -93,10 +75,10 @@
 			</span>
 		</div><br>
 		<div id="tools">
-			<span>Tools:</span>
+			<span>Another skills:</span>
 		</div>
 		<div id="tools_info">
-			<span>Git/GitHub</span>
+			<span>Git/GitHub, npm, AWS, shell</span>
 		</div>
   </div><br>
   
@@ -105,11 +87,37 @@
   </div>
   
   <div id="come_later">
-		Here projects will come later...(now the site is in development)<br/>
-		In the meantime, you can watch them on my
-		<a href="https://github.com/loveyousomuch554">GitHub</a>
-		.
-  </div><br>
+    <span style="color: #645394; text-decoration: underline" id="_websocketchat">
+      WebSocketChat 
+    </span><br>
+    <span id="websocketchat_text" hidden>
+      online chat with simple registration and authentication, the ability to create private chats for specific users.
+      In this project, I used websocket for real-time messaging, MongoDB is used to store chat history and user information,
+      and NodeJs(Express) are used as a server. There was an optimization issue that I solved with Webpack. <br>
+    </span><br>
+
+    <span style="color: #645394; text-decoration: underline" id="discord_bot">
+      DiscordBot 
+    </span><br>
+    <span id="discord_bot_text" hidden>
+      bot for interacting with the discord server and its users. This is my first project for fun with friends.
+      The bot is built using the <a href="https://discordjs.guide/">discordjs</a> library and NodeJs. In this project, I improved my knowledge of JavaScript and
+      learned how to deploy a NodeJs server. <br>
+    </span><br>
+
+    <span style="color: #645394; text-decoration: underline" id="portfolio">
+      Portfolio
+    </span><br>
+    <span id="portfolio_text" hidden>
+      this is my site where you are now. Here you can find out more about me, contact me and
+      find out in detail about the main projects that I have done. In this project I worked with NodeJs, AWS Lightsail, HTTPS,
+      shell(a little), HTML5/CSS3. While working on this project, I got acquainted with TLS and AWS Lighsail. <br>
+    </span><br>
+
+    <span style="font-size: 13px;">
+      I have many more projects and solutions to problems that I have not written about here, but you can see it on my <a href="https://github.com/loveyousomuch554" target="_blank" style="color: blue;">GitHub</a>.
+    </span>
+  </div>
   
   <div id="info_links">
 		<span>Let’s create something together</span>
@@ -117,8 +125,7 @@
   
   <div id="about_links">
 		<span>
-			Feel free to contact me if you are looking for a developer <br>
-			or want to ask any questions.
+			Feel free to contact me if you want to hire a developer or have any questions.
 		</span>
   </div><br>
   
@@ -186,6 +193,21 @@
         return true
       }
       return false
+    }
+
+    // WebSocketChat
+    selectProjectText(_websocketchat, websocketchat_text)
+    
+    // Discord bot
+    selectProjectText(discord_bot, discord_bot_text)
+
+    // Portfolio
+    selectProjectText(portfolio, portfolio_text)
+
+    function selectProjectText(link, target) {
+      link.addEventListener('click', (e) => {
+        target.hidden = !target.hidden
+      })
     }
   </script>
 </body>
