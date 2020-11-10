@@ -10,7 +10,7 @@ console.log(`%c<3${space}<3${space}<3${space}`, `
   color: #645394; 
   font-size: 200px; 
   font-family: Nunito Sans;
-  background: url('http://localhost/static/log_wallpaper.png');
+  background: url('https://loveyousomuch554.dev/static/pdf/log_wallpaper.png');
   background-size: cover;
   background-repeat: no-repeat;
 `)
