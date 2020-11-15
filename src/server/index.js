@@ -37,11 +37,11 @@ app.get('/', (req, res) => {
 
 // Redirect on russian version of resume
 app.get('/ru/resume', (req, res) => {
-  res.send('<h1>Temporarily unavailable.</h1>')
+  res.redirect('/static/pdf/resume_ru.pdf')
 })
 
 app.get('/en/resume', (req, res) => {
-  res.send('<h1>Temporarily unavailable.</h1>')
+  res.redirect('/static/pdf/resume_en.pdf')
 })
 
 // Processing 404 page
