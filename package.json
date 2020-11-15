@@ -5,9 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "server": "node src/server/index.js",
-    "dev_server": "nodemon test/dev_server.js",
-    "build": "webpack"
+    "server": "node index.js",
+    "dev_server": "nodemon test/dev_server.js"
   },
   "repository": {
     "type": "git",
