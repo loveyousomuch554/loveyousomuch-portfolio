@@ -1,6 +1,6 @@
 const fs = require('fs')
-require('dotenv').config()
 const path = require('path')
+require('dotenv').config({ path: path.join(__dirname, 'conf', '.env')})
 const https = require('https')
 const express = require('express')
 const MobileDetect = require('mobile-detect')
@@ -13,7 +13,7 @@ const credentials = { key: privateKey, cert: certificate };
 const app = express()
 const httpsServer = https.createServer(credentials,  app)
 
-app.use('/static', express.static('public'))
+app.use('/static', express.static(path.join(__dirname, '..', 'client')))
 
 // Main page
 app.get('/', (req, res) => {

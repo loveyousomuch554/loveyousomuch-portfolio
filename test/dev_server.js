@@ -1,9 +1,12 @@
 const path = require('path')
 const express = require('express')
+require('dotenv').config({ path: 
+  path.join(__dirname, '..', 'src', 'server', 'conf', '.env')
+})
 
 // Create server
 const app = express()
-app.use('/static', express.static('public'))
+app.use('/static', express.static(path.join(__dirname, '..', 'src', 'client')))
 
 app.get('/mobile', (req, res) => {
   let p = path.join(__dirname, '..', 'public', 'mobile.html')
@@ -16,11 +19,11 @@ app.get('/ru/resume', (req, res) => {
 
 // Processing 404 page
 app.use((req, res, next) => {
-  let p = path.join(__dirname, '..', 'public', '404.html')
+  let p = path.join(__dirname, '..', 'src', 'client', '404.html')
   res.status(404).sendFile(p)
 })
 
-const PORT = 80;
+const PORT = process.env.DEV_PORT
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
   console.log(`Start at ${new Date()}`)
