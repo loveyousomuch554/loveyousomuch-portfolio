@@ -5,8 +5,12 @@ const https = require('https')
 const express = require('express')
 const MobileDetect = require('mobile-detect')
 
-const privateKey = fs.readFileSync('../conf/server.key');
-const certificate = fs.readFileSync('../conf/server.crt');
+const privateKey = fs.readFileSync( 
+  path.join(__dirname, '..', '..', '..', 'conf', 'server.key')
+);
+const certificate = fs.readFileSync( 
+  path.join(__dirname, '..', '..', '..', 'conf', 'server.crt')
+);
 const credentials = { key: privateKey, cert: certificate };
 
 // Create server
