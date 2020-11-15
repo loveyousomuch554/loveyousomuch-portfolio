@@ -22,29 +22,27 @@ app.get('/', (req, res) => {
 
   if (!isMobile) {
     // Send desktop version of the site
-    res.sendFile(path.join(__dirname, 'public', 'index.html'))
+    res.sendFile(path.join(__dirname, '..', 'client', 'index.html'))
     return;
   }
 
   // Send the mobile version of the site
-  res.sendFile(path.join(__dirname, 'public', 'mobile.html'))
+  res.sendFile(path.join(__dirname, '..', 'client', 'mobile.html'))
   return;
 })
 
 // Redirect on russian version of resume
 app.get('/ru/resume', (req, res) => {
-  // res.redirect('/static/pdf/resume_ru.pdf')
   res.send('<h1>Temporarily unavailable.</h1>')
 })
 
 app.get('/en/resume', (req, res) => {
-  // res.redirect('/static/pdf/resume_en.pdf')
   res.send('<h1>Temporarily unavailable.</h1>')
 })
 
 // Processing 404 page
 app.use((req, res) => {
-  let p = path.join(__dirname, 'public', '404.html')
+  let p = path.join(__dirname, '..', 'client', '404.html')
   res.status(404).sendFile(p)
 })
 
