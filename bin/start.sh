@@ -1,12 +1,14 @@
 #!/bin/bash
 
+cd /opt/bitnami/apps/portfolio/bin
+
 # If input is empty set the variable to some value
 if [ -z "$1" ]
 then
     $1="author_wants_to_break_the_script"
 fi
 
-if [ $1 == 'server' ]
+if [ $1 == 'start' ]
 then
     # Start server with pm2
     pm2 start server.sh --name site --no-autorestart
