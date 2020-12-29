@@ -8,3 +8,6 @@
     <img src="https://loveyousomuch554.dev/static/svgs/link.svg" alt="link_on_site">
   <a/>
 </h2>
+
+
+<h2>The project no longer exists.</h2>
